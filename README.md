@@ -30,3 +30,5 @@ Returns:
 ## To run
 Every loop iteration, use:
 `    wave.runWave();`
+
+See the _examples_ folder for more info.
