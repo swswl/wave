@@ -8,7 +8,6 @@ unsigned int animation;
 unsigned long start;
 
 void setup() {
-  // put your setup code here, to run once:
   randomSeed(analogRead(0));
   pinMode(Pin, OUTPUT);
   unsigned long now = millis();
