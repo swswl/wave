@@ -11,18 +11,22 @@ This library allows the generation of several simple and more complex signal pat
 `Wave wave(Pin, minOutpout);`
 
 Where:
-- Pin: Arduino PWM pin to use as output
-- minOutput: A value below which the output will be:
+- _Pin_: Arduino PWM pin to use as output
+- _minOutput_: A value below which the output will be:
   - = 0 if <50% of this parameter
-  - = minOutput if >50% of parameter and <minOutput
+  - = minOutput if (>50% of parameter and <minOutput)
 ## Setting up animation
 `duration = wave.setWave(animation, speed, rep, brightness);`
 
 Where:
-- animation: one of (currently) 17 (0-16) animations. int
-- speed: duration of a single "pass" of the animation (in ms). int
-- rep: the number of repetitions (passes) of the animation. int
-- brightness: 0-255 max value of PWM. int
+- _animation_: one of (currently) 17 (0-16) animations. int
+- _speed_: duration of a single "pass" of the animation (in ms). int
+- _rep_: the number of repetitions (passes) of the animation. int
+- _brightness_: 0-255 max value of PWM. int
 
 Returns:
-- duration: speed * rep. unsigned int
+- _duration_: speed * rep. unsigned int
+
+## To run
+Every loop iteration, use:
+`    wave.runWave();`
