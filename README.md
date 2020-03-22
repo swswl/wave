@@ -31,4 +31,4 @@ Returns:
 Every loop iteration, use:
 `    wave.runWave();`
 
-See the _example_ folder for more info.
+See the _examples_ folder for more info.
